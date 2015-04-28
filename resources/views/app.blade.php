@@ -7,10 +7,10 @@
         <title>Material Admin</title>
         
         <!-- Vendor CSS -->
-        <link href="{{ asset('theme/Template/vendors/animate-css/animate.min.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('theme/Template/vendors/animate-css/animate.min.css') }}" rel="stylesheet">
 
         <!-- CSS -->
-        <link href="{{ asset('theme/Template/css/app.css') }}" rel="stylesheet">
+        <link href="theme/Template/css/app.css" rel="stylesheet">
         
     </head>
     
