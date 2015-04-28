@@ -51,21 +51,21 @@ $results = $query->find();
 
                        @foreach ($results as $item)
                         <?php 
-                      /*  $carbon = Carbon::instance($item->getUpdatedAt());*/
+                      $carbon = Carbon::instance($item->getUpdatedAt());*/
                         ?>
                        <tr>
 
                         <td><a href="/inventory/{{{ $item->getObjectId() }}}">{{{ $item->get('name') }}}</a></td>
                         <td>{{{ $item->get('quantityOnHand') }}}</td>
-                        <?php /*
+                     
                         <td>{{{$carbon->diffInDays()}}}</td>
                         @if($carbon->diffInMinutes() < 60)
                         <td><span style="color:#4CAF50">{{{ $carbon->diffForHumans() }}}</span></td>
                         @else
                         <td><span >{{{ $carbon->diffForHumans() }}}</span></td>
                         @endif
-                        */
-                        ?>
+                        
+                        
 
                     </tr>
 
