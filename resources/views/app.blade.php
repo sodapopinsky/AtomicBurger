@@ -103,16 +103,16 @@
         <!-- Javascript Libraries -->
    
 
-        <script src="{{ asset('theme/Template/js/jquery-2.1.1.min.js') }}"></script>
-        <script src="{{ asset('theme/Template/js/bootstrap.min.js') }}"></script>
+        <script src="/theme/Template/js/jquery-2.1.1.min.js"></script>
+        <script src="/theme/Template/js/bootstrap.min.js"></script>
         
-        <script src="{{ asset('theme/Template/vendors/nicescroll/jquery.nicescroll.min.js') }}"></script>
-        <script src="{{ asset('theme/Template/vendors/auto-size/jquery.autosize.min.js') }}"></script>
-        <script src="{{ asset('theme/Template/vendors/waves/waves.min.js') }}"></script>
-        <script src="{{ asset('theme/Template/vendors/bootstrap-growl/bootstrap-growl.min.js') }}"></script>
-        <script src="{{ asset('theme/Template/vendors/sweet-alert/sweet-alert.min.js') }}"></script>
+        <script src="/theme/Template/vendors/nicescroll/jquery.nicescroll.min.js"></script>
+        <script src="/theme/Template/vendors/auto-size/jquery.autosize.min.js"></script>
+        <script src="/theme/Template/vendors/waves/waves.min.js"></script>
+        <script src="/theme/Template/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
+        <script src="/theme/Template/vendors/sweet-alert/sweet-alert.min.js"></script>
 
-        <script src="{{ asset('theme/Template/js/functions.js') }}"></script>
+        <script src="/theme/Template/js/functions.js"></script>
 
         @yield('js')
  
