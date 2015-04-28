@@ -39,15 +39,9 @@
                 
                         <ul class="main-menu" style="margin:0px;" >
 
-                            <li class="sub-menu active toggled">
+                            <li class="active">
                                 <a href=""><i class="md md-my-library-books"></i> Inventory</a>
-                
-                                <ul>
-                                    <li><a class="active" href="form-elements.html">Weekly Inventory</a></li>
-                                    <li><a href="form-components.html">End Of Month Inventory</a></li>
-                                    <li><a href="form-examples.html">Inventory Adjust</a></li>
-                                    
-                                </ul>
+            
                             </li>
 
 
