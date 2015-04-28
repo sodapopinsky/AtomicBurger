@@ -5,13 +5,14 @@
 <?php
 
 use Parse\ParseClient;
+use Carbon\Carbon;
 
 ParseClient::initialize('lTfgcKzUPZjigInKO4e7VP8p81Wzb6Fe2dJy6UXV', 'AtMILpMRqk1J1v7UTD06DUTgwwlTyHivDoVaX3vT', 'CxbuOBvdBlyql2UryNYbE2x8WIJ6eq27EXYSY2T6');
 
 use Parse\ParseObject;
 use Parse\ParseQuery;
 $query = new ParseQuery("inventoryObjects");
-//$query->equalTo("name", "Turkey");
+$query->descending("createdAt");
 $results = $query->find();
 ?>
 
@@ -41,7 +42,7 @@ $results = $query->find();
                             <th>Object Name</th>
                             <th>Quantity On Hand</th>
                             <th>Par</th>
-                            <th>Last Updateds</th>
+                            <th>Last Updated</th>
 
                         </tr>
                     </thead>
@@ -49,13 +50,19 @@ $results = $query->find();
 
 
                        @foreach ($results as $item)
-
+                        <?php 
+                        $carbon = Carbon::instance($item->getUpdatedAt());
+                        ?>
                        <tr>
 
                         <td><a href="/inventory/{{{ $item->getObjectId() }}}">{{{ $item->get('name') }}}</a></td>
                         <td>{{{ $item->get('quantityOnHand') }}}</td>
-                        <td></td>
-                        <td>{{{ $item->getUpdatedAt()->format('Y-m-d H:i:s') }}}</td>
+                        <td>{{{$carbon->diffInDays()}}}</td>
+                        @if($carbon->diffInMinutes() < 60)
+                        <td><span style="color:#4CAF50">{{{ $carbon->diffForHumans() }}}</span></td>
+                        @else
+                        <td><span >{{{ $carbon->diffForHumans() }}}</span></td>
+                        @endif
 
                     </tr>
 
@@ -65,7 +72,7 @@ $results = $query->find();
                 </tbody>
             </table>
         </div>
-        
+
     </div>
 
 

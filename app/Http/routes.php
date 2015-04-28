@@ -23,6 +23,6 @@ Route::controllers([
 Route::get('inventory', 'InventoryController@index');
 Route::get('/inventory/additem', 'InventoryController@additem');
 Route::post('/inventory/doadjust/{inventoryId}', 'InventoryController@doAdjust');
-Route::post('/inventory/doadditem', 'InventoryContreoller@doAddItem');
+Route::post('/inventory/doadditem', 'InventoryController@doAddItem');
 Route::get('/inventory/{inventoryId}', 'InventoryController@objectDetail');
 
