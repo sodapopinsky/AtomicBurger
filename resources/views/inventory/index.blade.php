@@ -51,7 +51,7 @@ $results = $query->find();
 
                        @foreach ($results as $item)
                         <?php 
-                      $carbon = Carbon::instance($item->getUpdatedAt());*/
+                      $carbon = Carbon::instance($item->getUpdatedAt());
                         ?>
                        <tr>
 
