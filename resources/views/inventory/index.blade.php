@@ -44,7 +44,7 @@ $results = $query->find();
 
                             <th>Object Name</th>
                             <th>Quantity On Hand</th>
-                            <th>Par</th>
+                       
                             <th>Last Updated</th>
 
                         </tr>
@@ -61,11 +61,11 @@ $results = $query->find();
                         <td><a href="/inventory/{{{ $item->getObjectId() }}}">{{{ $item->get('name') }}}</a></td>
                         <td>{{{ $item->get('quantityOnHand') }}}</td>
                      
-                        <td></td>
+ 
                       
             
                    
-                        <td><span >{{{ $item->getUpdatedAt()->format('Y-m-d') }}}</span></td>
+                        <td><span >{{{ $item->getUpdatedAt()->format('M-d') }}}</span></td>
 
                         <?php
                       
