@@ -65,7 +65,7 @@ $results = $query->find();
                         <td><span >{{{ $carbon->diffForHumans() }}}</span></td>
                         @endif
                         
-                        
+                    
 
                     </tr>
 
