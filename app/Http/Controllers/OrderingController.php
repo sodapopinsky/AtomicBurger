@@ -27,7 +27,7 @@ class OrderingController extends Controller {
 
 	public function orderForm($id)
 	{
-		return view('ordering.orderForm', ['id' => $id]);
+		return view('ordering.orderform', ['id' => $id]);
 	}
 	public function editForm($id)
 	{
