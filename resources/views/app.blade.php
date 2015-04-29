@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Material Admin</title>
+        <title>Atomic Burger Admin</title>
         
         <!-- Vendor CSS -->
         <link href="/theme/Template/vendors/animate-css/animate.min.css" rel="stylesheet">
@@ -41,8 +41,12 @@
                 
                         <ul class="main-menu" style="margin:0px;" >
 
-                            <li class="active">
-                                <a href=""><i class="md md-my-library-books"></i> Inventory</a>
+                            <li >
+                                <a href="/inventory"><i class="md md-my-library-books"></i> Inventory</a>
+            
+                            </li>
+                              <li >
+                                <a href="/ordering"><i class="md md-shopping-cart"></i> Order Forms</a>
             
                             </li>
 

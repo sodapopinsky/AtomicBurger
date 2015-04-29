@@ -69,7 +69,7 @@ try {
  var value = $( "#quantity" ).val();
 
   event.preventDefault();
-   if ( value.length > 0 && $.isNumeric(value)){
+   if ( value == 0 || (value.length > 0 && $.isNumeric(value)){
     $( "#adjustform" ).submit();
    }
    else{

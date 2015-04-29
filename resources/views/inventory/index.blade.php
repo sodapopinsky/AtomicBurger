@@ -54,12 +54,13 @@ $results = $query->find();
 
                        @foreach ($results as $item)
                         <?php 
-                      /*$carbon = Carbon::instance($item->getUpdatedAt());*/
+                       
+                    
                         ?>
                        <tr>
 
                         <td><a href="/inventory/{{{ $item->getObjectId() }}}">{{{ $item->get('name') }}}</a></td>
-                        <td>{{{ $item->get('quantityOnHand') }}}</td>
+                        <td>{{{ intval($item->get('quantityOnHand')) }}}</td>
                      
  
                       

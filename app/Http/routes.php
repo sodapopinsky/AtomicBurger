@@ -22,6 +22,12 @@ Route::controllers([
 
 Route::get('inventory', 'InventoryController@index');
 Route::get('/inventory/additem', 'InventoryController@additem');
+
+Route::get('/ordering', 'OrderingController@index');
+Route::get('/ordering/orderform/{orderFormId}', 'OrderingController@orderForm');
+Route::get('/ordering/edit/{orderFormId}', 'OrderingController@editForm');
+Route::post('/ordering/saveedits', 'OrderingController@saveEdits');
+
 Route::post('/inventory/doadjust/{inventoryId}', 'InventoryController@doAdjust');
 Route::post('/inventory/doadditem', 'InventoryController@doAddItem');
 Route::get('/inventory/{inventoryId}', 'InventoryController@objectDetail');
