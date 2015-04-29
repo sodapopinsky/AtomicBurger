@@ -54,7 +54,7 @@ $query->containedIn("playerName",
                                                     <a href="/ordering/edit/{{{$orderForm->getObjectId()}}}">Edit List</a>
                                                 </li>
                                                 <li>
-                                                    <a href="">Delete List</a>
+                                                    <a id="sa-warning">Delete List</a>
                                                 </li>
                                                 
                                             </ul>
@@ -71,9 +71,9 @@ $query->containedIn("playerName",
                         <tr>
            
                             <th>Item</th>
-                            <th>Order Quantity</th>
+                            <th><div class="pull-right">Order Quantity</div></th>
                    
-                       <th>Last Updated</th>
+
                      
 
                         </tr>
@@ -85,20 +85,25 @@ $query->containedIn("playerName",
                        @if($item->item->get('par') - $item->item->get('quantityOnHand') > 0)
                        <tr>
                      
-                        <td>    <div class="checkbox media">
+                         <td>
+                    
+                                  
+                                <div class="checkbox media">
                                   
                                         <div class="media-body">
                                             <label>
                                                 <input type="checkbox">
                                                 <i class="input-helper"></i>
-                                                     {{{ $item->item->get('name') }}}
+                                                    <b> {{{ $item->item->get('name') }}}</b>
                                             </label>
                                         </div>
                                     </div>
+                                    <div style="color:#9E9E9E"><small>Last updated <span style="color:#8BC34A"> {{{ $item->item->getUpdatedAt()->format('M-d') }}}</span></small></div>
                                </td>
-                          <td>{{{ $item->item->get('par') - $item->item->get('quantityOnHand')  }}}</td>
-                        
-      <td><span >{{{ $item->item->getUpdatedAt()->format('M-d') }}}</span></td> 
+
+                          <td><div class="pull-right" >
+                         <h4> {{{ $item->item->get('par') - $item->item->get('quantityOnHand')  }}}</h4>
+                          </div></td>
                      
                         
                     
@@ -106,25 +111,32 @@ $query->containedIn("playerName",
                     </tr>
 @endif
                     @endforeach
-
+                        
                           @foreach ($results as $item)
                        @if($item->item->get('par') - $item->item->get('quantityOnHand') <= 0)
-                       <tr>
+                       <tr >
                      
-                        <td>    <div class="checkbox media">
+                        <td>
+                    
+                                  
+                                <div class="checkbox media">
                                   
                                         <div class="media-body">
                                             <label>
                                                 <input type="checkbox" checked="checked">
                                                 <i class="input-helper"></i>
-                                                     {{{ $item->item->get('name') }}}
+                                                    <b> {{{ $item->item->get('name') }}}</b>
                                             </label>
                                         </div>
                                     </div>
+                                    <div style="color:#9E9E9E"><small>Last updated <span style="color:#8BC34A"> {{{ $item->item->getUpdatedAt()->format('M-d') }}}</span></small></div>
                                </td>
-                          <td>{{{ $item->item->get('par') - $item->item->get('quantityOnHand')  }}}</td>
+
+                          <td><div class="pull-right" >
+                         <h4> {{{ $item->item->get('par') - $item->item->get('quantityOnHand')  }}}</h4>
+                          </div></td>
                         
-      <td><span >{{{ $item->item->getUpdatedAt()->format('M-d') }}}</span></td> 
+
                      
                         
                     
@@ -141,6 +153,17 @@ $query->containedIn("playerName",
             
         </div>
 
+                                   
+
+
+
+
+<form action="/ordering/deleteform/<?php echo $id?>" method="post" id="deleteForm">
+</form>
+
+
+
+
 
                 </div>
             </section>
@@ -149,5 +172,21 @@ $query->containedIn("playerName",
 @endsection
 
 @section('js')
-   
+   <script>
+      //Warning Message
+            $('#sa-warning').click(function(){
+                swal({   
+                    title: "Are you sure?",   
+                    text: "You will not be able to recover this list!",   
+                    type: "warning",   
+                    showCancelButton: true,   
+                    confirmButtonColor: "#DD6B55",   
+                    confirmButtonText: "Yes, delete it!",   
+                    closeOnConfirm: true 
+                }, function(){   
+                    $( "#deleteForm" ).submit();
+                });
+            });
+
+            </script>
 @endsection

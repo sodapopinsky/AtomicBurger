@@ -8,7 +8,7 @@
         
         <!-- Vendor CSS -->
         <link href="/theme/Template/vendors/animate-css/animate.min.css" rel="stylesheet">
-
+        <link href="/theme/Template/vendors/sweet-alert/sweet-alert.min.css" rel="stylesheet">
         <!-- CSS -->
         <link href="/theme/Template/css/app.css" rel="stylesheet">
         

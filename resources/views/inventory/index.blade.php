@@ -38,14 +38,13 @@ $results = $query->find();
 
             <div class="table-responsive">
        
-                <table class="table">
+                <table class="table ">
                     <thead>
                         <tr>
 
                             <th>Object Name</th>
-                            <th>Quantity On Hand</th>
-                       
-                            <th>Last Updated</th>
+                            <th><div class="pull-right">Quantity On Hand</div></th>
+                      
 
                         </tr>
                     </thead>
@@ -59,14 +58,18 @@ $results = $query->find();
                         ?>
                        <tr>
 
-                        <td><a href="/inventory/{{{ $item->getObjectId() }}}">{{{ $item->get('name') }}}</a></td>
-                        <td>{{{ intval($item->get('quantityOnHand')) }}}</td>
+                        <td>
+                        <a href="/inventory/{{{ $item->getObjectId() }}}">{{{ $item->get('name') }}}</a>
+                        <div style="color:#9E9E9E"><small>Last updated <span style="color:#8BC34A"> {{{ $item->getUpdatedAt()->format('M-d') }}}</span></small></div>
+                           
+                           </td>
+                        <td><div class="pull-right" >
+                       <h4> {{{ intval($item->get('quantityOnHand')) }}} </h4>
+                        </div></td>
                      
  
-                      
-            
-                   
-                        <td><span >{{{ $item->getUpdatedAt()->format('M-d') }}}</span></td>
+
+
 
                         <?php
                       

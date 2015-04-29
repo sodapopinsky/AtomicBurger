@@ -26,6 +26,11 @@ Route::get('/inventory/additem', 'InventoryController@additem');
 Route::get('/ordering', 'OrderingController@index');
 Route::get('/ordering/orderform/{orderFormId}', 'OrderingController@orderForm');
 Route::get('/ordering/edit/{orderFormId}', 'OrderingController@editForm');
+
+Route::get('/ordering/addform', 'OrderingController@addForm');
+Route::post('/ordering/createform', 'OrderingController@createForm');
+Route::post('/ordering/deleteform/{formId}', 'OrderingController@deleteForm');
+
 Route::post('/ordering/saveedits', 'OrderingController@saveEdits');
 
 Route::post('/inventory/doadjust/{inventoryId}', 'InventoryController@doAdjust');
