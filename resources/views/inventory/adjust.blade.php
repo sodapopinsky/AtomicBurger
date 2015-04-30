@@ -25,7 +25,7 @@
   </div>
 
   <div class="pull-right">
-    <a class="btn bgm-gray waves-effect" href="/inventory">Cancel</a>
+    <a class="btn bgm-gray waves-effect" href="/inventory/adjust">Cancel</a>
     <button id="save" class="btn bgm-blue waves-effect " style="margin-right:5px;">Save</button>
   </div>
 
