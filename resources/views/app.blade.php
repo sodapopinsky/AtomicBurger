@@ -40,9 +40,13 @@
                     <div class="si-inner">
                 
                         <ul class="main-menu" style="margin:0px;" >
-
-                            <li >
-                                <a href="/inventory"><i class="md md-my-library-books"></i> Inventory</a>
+                            <li class="sub-menu">
+                                 <a href=""><i class="md md-my-library-books"></i>Inventory</a>
+                                  <ul>
+                                    <li><a href="/inventory/adjust">Adjust Inventory</a></li>
+                                    <li><a href="/inventory/report">Reports</a></li>
+                                </ul>
+                         
             
                             </li>
                               <li >

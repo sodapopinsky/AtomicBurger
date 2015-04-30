@@ -4,34 +4,69 @@ use Parse\ParseObject;
 use Parse\ParseQuery;
 use Parse\ParseClient;
 use Illuminate\Support\Facades\Input;
-class OrderingController extends Controller {
-	/**
-	 * Create a new controller instance.
-	 *
-	 * @return void
-	 */
+class OrderingController extends BaseController {
+
 	public function __construct()
 	{
 		$this->middleware('guest');
 	}
 
-	/**
-	 * Show the application welcome screen to the user.
-	 *
-	 * @return Response
-	 */
 	public function index()
 	{
-		return view('ordering.index');
+
+		$this->initializeParse();
+
+		$query = new ParseQuery("orderForms");
+		$query->descending("createdAt");
+		$results = $query->find();
+		return view('ordering.index',['results' => $results]);
 	}
 
 	public function orderForm($id)
 	{
-		return view('ordering.orderform', ['id' => $id]);
+		$this->initializeParse();
+
+		$query = new ParseQuery("orderForms");
+		try {
+			$orderForm = $query->get($id);
+  // The object was retrieved successfully.
+		} catch (ParseException $ex) {
+  // The object was not retrieved successfully.
+  // error is a ParseException with an error code and message.
+		}
+
+
+		$query = new ParseQuery("orderFormItems");
+		$query->equalTo("orderForm",$orderForm);
+		$query->includeKey("item");
+		$results = $query->find();
+		return view('ordering.orderform', ['orderForm' => $orderForm, 'results' => $results]);
 	}
+
 	public function editForm($id)
 	{
-		return view('ordering.editform', ['id' => $id]);
+		$this->initializeParse();
+		$query = new ParseQuery("orderForms");
+		try {
+			$orderForm = $query->get($id);
+
+		} catch (ParseException $ex) {
+		}
+
+		$query = new ParseQuery("orderFormItems");
+		$query->equalTo("orderForm",$orderForm);
+		$query->includeKey("item");
+		$orderFormItems = $query->find();
+		$orderFormItemIds = array();
+		foreach($orderFormItems as $item){
+			array_push($orderFormItemIds,$item->item->getObjectId());
+		}
+
+		$query = new ParseQuery("inventoryObjects");
+		$query->descending("createdAt");
+		$results = $query->find();
+
+		return view('ordering.editform', ['orderFormItemIds' => $orderFormItemIds, 'orderForm' => $orderForm,'results' => $results]);
 	}
 
 	public function addForm()
@@ -39,44 +74,63 @@ class OrderingController extends Controller {
 		return view('ordering.addform');
 	}
 
-public function deleteForm($id)
+	public function deleteForm($id)
 	{
-
-		ParseClient::initialize('lTfgcKzUPZjigInKO4e7VP8p81Wzb6Fe2dJy6UXV', 'AtMILpMRqk1J1v7UTD06DUTgwwlTyHivDoVaX3vT', 'CxbuOBvdBlyql2UryNYbE2x8WIJ6eq27EXYSY2T6');
-
+		$this->initializeParse();
 		$query = new ParseQuery("orderForms");
-try {
-  $orderForm = $query->get($id);
-  // The object was retrieved successfully.
-} catch (ParseException $ex) {
-  // The object was not retrieved successfully.
-  // error is a ParseException with an error code and message.
-}
+		try {
+			$orderForm = $query->get($id);
+		} catch (ParseException $ex) {
+		}
 
-$orderForm->destroy();
-return redirect('/ordering');
-
+		$orderForm->destroy();
+		return redirect('/ordering');
 	}
-public function createForm()
+
+	public function createForm()
 	{
-
-		ParseClient::initialize('lTfgcKzUPZjigInKO4e7VP8p81Wzb6Fe2dJy6UXV', 'AtMILpMRqk1J1v7UTD06DUTgwwlTyHivDoVaX3vT', 'CxbuOBvdBlyql2UryNYbE2x8WIJ6eq27EXYSY2T6');
-
+		$this->initializeParse();
 		$item = new ParseObject("orderForms");
-	
-
 		$item->set("name", Input::get('formName'));
-
 		$item->save();
 		return redirect('/ordering');
-
-		//return view('ordering.createform');
 	}
 
 	public function saveEdits()
 	{
+		$itemId = Input::get('itemId');
+		$formId =  Input::get('formId');
+		$this->initializeParse();
+		$query = new ParseQuery("inventoryObjects");
+		try {
+			$inventoryItem = $query->get($itemId);
+		} catch (ParseException $ex) {
+		}
 
-		return view('ordering.saveedits', ['itemId' => Input::get('itemId'),'formId' => Input::get('formId')]);
+		$query = new ParseQuery("orderForms");
+		try {
+			$orderForm = $query->get($formId);
+		} catch (ParseException $ex) {
+
+		}
+
+		$query = new ParseQuery("orderFormItems");
+		$query->equalTo("item",$inventoryItem)->equalTo("orderForm",$orderForm);
+		$results = $query->find();
+
+		if(count($results) > 0){
+			foreach($results as $item){
+				$item->destroy();
+			}
+			echo "destroyed";
+		}
+		else{
+			$object = new ParseObject("orderFormItems");
+			$object->set("item",$inventoryItem);
+			$object->set("orderForm",$orderForm);
+			$object->save();
+			echo "saved";
+		}
 	}
 	
 
