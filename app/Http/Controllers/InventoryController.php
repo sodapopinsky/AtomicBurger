@@ -43,7 +43,7 @@ class InventoryController extends BaseController {
 		$item->set("name", Input::get('itemname'));
 		$item->set("measurement", Input::get('itemmeasurement'));
 		$item->save();
-		return redirect('/inventory');
+		return redirect('/inventory/adjust');
 	}
 
 	public function doAdjust($id)
@@ -63,7 +63,7 @@ class InventoryController extends BaseController {
 		$object->set("quantity",floatval(Input::get('quantity')));
 		$object->save();
 
-		return redirect('/inventory');
+		return redirect('/inventory/adjust');
 	}
 
 }

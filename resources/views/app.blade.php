@@ -46,8 +46,6 @@
                                     <li><a href="/inventory/adjust">Adjust Inventory</a></li>
                                     <li><a href="/inventory/report">Reports</a></li>
                                 </ul>
-                         
-            
                             </li>
                               <li >
                                 <a href="/ordering"><i class="md md-shopping-cart"></i> Order Forms</a>
