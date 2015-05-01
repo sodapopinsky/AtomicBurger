@@ -1,5 +1,10 @@
 @extends('app')
 @section('content')
+<?php
+use Carbon\Carbon;
+
+printf("Now: %s", Carbon::now());
+?>
 <section id="content">
   <div class="container">
     <div class="card">
