@@ -3,6 +3,7 @@
 use Parse\ParseObject;
 use Parse\ParseQuery;
 use Parse\ParseClient;
+
 use Illuminate\Support\Facades\Input;
 class InventoryController extends BaseController {
 	

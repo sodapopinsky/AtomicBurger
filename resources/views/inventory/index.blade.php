@@ -1,10 +1,7 @@
+<?php use Carbon\Carbon; ?>
 @extends('app')
 @section('content')
-<?php
-use Carbon\Carbon;
 
-printf("Now: %s", Carbon::now());
-?>
 <section id="content">
   <div class="container">
     <div class="card">
@@ -28,7 +25,10 @@ printf("Now: %s", Carbon::now());
             <tr>
             <td>
                 <a href="/inventory/{{{ $item->getObjectId() }}}">{{{ $item->get('name') }}}</a>
-                <div style="color:#9E9E9E"><small>Last updated <span style="color:#8BC34A"> {{{ $item->getUpdatedAt()->format('M-d') }}}</span></small></div>
+                <div style="color:#9E9E9E"><small>Last updated <span style="color:#8BC34A">
+  
+                {{{ Carbon::instance($item->getUpdatedAt())->diffForHumans() }}}
+                 </span></small></div>
               </td>
               <td>
                 <div class="pull-right" >
