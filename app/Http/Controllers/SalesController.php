@@ -9,6 +9,11 @@ class SalesController extends Controller
        		return view('index');
     }
 
+    protected function import()
+    {
+       		return view('import');
+    }
+
       protected function events()
     {
        		return view('events');

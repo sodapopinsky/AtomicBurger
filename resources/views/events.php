@@ -131,6 +131,16 @@ foreach($results as $item){
 		"className" => 'bgm-blue'
 		);
 	array_push($events,$pmEvent);
+
+		$totalEvent = 
+	array(
+		"title"=> "$" . number_format($item->pm + $item->am),
+		"id"=>$item->getObjectId(),
+		"start"=>$dt,
+		"end"=>$dt,
+		"className" => 'bgm-green'
+		);
+	array_push($events,$totalEvent);
 }
 
 
@@ -163,6 +173,18 @@ if($end->gt(Carbon::now())){
 		"className" => 'bgm-gray'
 		);
 		array_push($events,$event);
+
+			$event = 
+	array(
+		"title"=> "$".number_format($prediction["pm"] + $prediction["am"] ),
+		"id"=>"1",
+		"start"=>$end->toDateTimeString(),
+		"end"=>$end->toDateTimeString(),
+		"className" => 'bgm-bluegray'
+		);
+		array_push($events,$event);
+
+
 		$end->subDay(); 
 
 	

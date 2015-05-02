@@ -1,6 +1,7 @@
 <?php
 
 Route::get('/sales', 'SalesController@index');
+Route::get('/import', 'SalesController@import');
 
 Route::get('/events', 'HomeController@events');
 
