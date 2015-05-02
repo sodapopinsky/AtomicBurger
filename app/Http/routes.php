@@ -1,6 +1,8 @@
 <?php
 
-Route::get('/', 'InventoryController@index');
+Route::get('/sales', 'SalesController@index');
+
+Route::get('/events', 'HomeController@events');
 
 Route::get('/ordering', 'OrderingController@index');
 Route::get('/ordering/orderform/{orderFormId}', 'OrderingController@orderForm');

@@ -2,6 +2,7 @@
 use Parse\ParseObject;
 use Parse\ParseQuery;
 use Parse\ParseClient;
+use Illuminate\Support\Facades\Input;
 class BaseController extends Controller
 {
      protected function initializeParse()

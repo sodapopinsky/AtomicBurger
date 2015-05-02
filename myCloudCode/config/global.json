@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.4.2"
+  },
+  "applications": {
+    "ABAdmin": {
+      "applicationId": "lTfgcKzUPZjigInKO4e7VP8p81Wzb6Fe2dJy6UXV",
+      "masterKey": "CxbuOBvdBlyql2UryNYbE2x8WIJ6eq27EXYSY2T6"
+    },
+    "_default": {
+      "link": "ABAdmin"
+    }
+  }
+}
