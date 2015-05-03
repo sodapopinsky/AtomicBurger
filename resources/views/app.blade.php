@@ -50,7 +50,7 @@
                                  <a href=""><i class="md md-my-library-books"></i>Inventory</a>
                                   <ul>
                                     <li><a href="/inventory/adjust">Adjust Inventory</a></li>
-                                    <li><a href="/inventory/report">Reports</a></li>
+                                    
                                 </ul>
                             </li>
                               <li >

@@ -32,7 +32,7 @@
         <div id="error"  style="display:none" class="alert alert-danger" role="alert">Please fill out all fields</div>
 
         <div class="pull-right" style="margin-top:40px;">
-          <a class="btn bgm-gray waves-effect" href="/inventory">Cancel</a>
+          <a class="btn bgm-gray waves-effect" href="/inventory/adjust">Cancel</a>
           <button id="save" class="btn bgm-blue waves-effect " style="margin-right:5px;">Save</button>
         </div>
       </form>
