@@ -4,6 +4,7 @@ use Parse\ParseQuery;
 use Parse\ParseClient;
 use Illuminate\Support\Facades\Input;
 use Carbon\Carbon;
+date_default_timezone_set('America/Chicago');
 class ToolsController extends BaseController
 {
      protected function meatCalculator()
@@ -11,8 +12,14 @@ class ToolsController extends BaseController
        		return view('tools.meatcalculator');
     }
 
+    protected function test(){
 
+    	echo Carbon::now();
+    	
+    	return "1";
+    }
      protected function calculateMeat()
+    
     {
     	//calculate expected sales
 $this->initializeParse();
@@ -32,32 +39,32 @@ $projections = $query->find();
 */
     	$inputs = array(
 		0=>array(
-			"am"=>array("sum"=>0,"count"=>0),
-			"pm"=>array("sum"=>0,"count"=>0)),
+			"am"=>array("sum"=>0,"count"=>1),
+			"pm"=>array("sum"=>0,"count"=>1)),
 			
 		1=>array(
-			"am"=>array("sum"=>0,"count"=>0),
-			"pm"=>array("sum"=>0,"count"=>0)),
+			"am"=>array("sum"=>0,"count"=>1),
+			"pm"=>array("sum"=>0,"count"=>1)),
 
 		2=>array(
-			"am"=>array("sum"=>0,"count"=>0),
-			"pm"=>array("sum"=>0,"count"=>0)),
+			"am"=>array("sum"=>0,"count"=>1),
+			"pm"=>array("sum"=>0,"count"=>1)),
 
 		3=>array(
-			"am"=>array("sum"=>0,"count"=>0),
-			"pm"=>array("sum"=>0,"count"=>0)),
+			"am"=>array("sum"=>0,"count"=>1),
+			"pm"=>array("sum"=>0,"count"=>1)),
 
 		4=>array(
-			"am"=>array("sum"=>0,"count"=>0),
-			"pm"=>array("sum"=>0,"count"=>0)),
+			"am"=>array("sum"=>0,"count"=>1),
+			"pm"=>array("sum"=>0,"count"=>1)),
 
 		5=>array(
-			"am"=>array("sum"=>0,"count"=>0),
-			"pm"=>array("sum"=>0,"count"=>0)),
+			"am"=>array("sum"=>0,"count"=>1),
+			"pm"=>array("sum"=>0,"count"=>1)),
 
 		6=>array(
-			"am"=>array("sum"=>0,"count"=>0),
-			"pm"=>array("sum"=>0,"count"=>0)),
+			"am"=>array("sum"=>0,"count"=>1),
+			"pm"=>array("sum"=>0,"count"=>1)),
 		);
 	
 
@@ -67,40 +74,47 @@ $projections = $query->find();
 		$dow = $dt->dayOfWeek;
 
 		$am = $inputs[$dow]["am"];
-		if($item->am > 100){  //throw away low outliers
-		$am["count"] = $am["count"] + 1;
-		$am["sum"] = $am["sum"] + $item->am; 
+
+		if($item->am > $am["sum"]){ 
+		$am["sum"] = $item->am; 
 		$inputs[$dow]["am"] = $am;
-		}
-		if($item->pm > 100){
+		} 
 		$pm = $inputs[$dow]["pm"];
-		$pm["count"] = $pm["count"] + 1;
-		$pm["sum"] = $pm["sum"] + $item->pm; 
+		if($item->pm > $pm["sum"]){
+		$pm = $inputs[$dow]["pm"];
+		$pm["sum"] = $item->pm; 
 		$inputs[$dow]["pm"] = $pm;
 		}
+
+
 		//todo:  filter to only last 4 weeks
 
 
 	}
+	//echo json_encode($inputs);
 $predictions = array();
 foreach($inputs as $key=>$value){
 	$am = $value["am"];
 	if($am['count']>0)
-	$amAverage = $am['sum'] / $am['count'];
+	$amMax = $am['sum'];
 	else
-	$amAverage = 0;
+	$amMax = 0;
 	
 	$pm = $value["pm"];
 	if($pm['count']>0)
-	$pmAverage = $pm['sum'] / $pm['count'];
+	$pmMax = $pm['sum'];
 	else
-	$pmAverage = 0;
+	$pmMax = 0;
 
-	$predictions[$key] =  array("am"=>$amAverage,"pm"=>$pmAverage);
+
+
+
+	$predictions[$key] =  array("am"=>($amMax*1.1),"pm"=>($pmMax*1.1));
 }
-
+	//echo json_encode($predictions);
 $dt = Carbon::now();
 $dow = $dt->dayOfWeek;
+
 if($dow == 6)
 	$last = 0;
 else

@@ -3,6 +3,7 @@
 Route::get('/tools/meatcalculator', 'ToolsController@meatCalculator');
 Route::get('/calculatemeat', 'ToolsController@calculateMeat');
 
+Route::get('/test', 'ToolsController@test');
 Route::get('/sales', 'SalesController@index');
 Route::get('/', 'OrderingController@index');
 Route::post('/sales/deleteprojection', 'SalesController@deleteProjection');
