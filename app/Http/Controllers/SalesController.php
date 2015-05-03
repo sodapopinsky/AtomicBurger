@@ -19,4 +19,13 @@ class SalesController extends Controller
        		return view('events');
     }
 
+     protected function deleteProjection()
+    {
+       		return view('deleteprojection');
+    }
+      protected function saveProjection()
+    {
+          return view('saveprojection');
+    }
+
 }

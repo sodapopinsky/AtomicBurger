@@ -1,6 +1,13 @@
 <?php
 
+Route::get('/tools/meatcalculator', 'ToolsController@meatCalculator');
+Route::get('/calculatemeat', 'ToolsController@calculateMeat');
+
 Route::get('/sales', 'SalesController@index');
+
+Route::post('/sales/deleteprojection', 'SalesController@deleteProjection');
+Route::post('/sales/saveprojection', 'SalesController@saveProjection');
+
 Route::get('/import', 'SalesController@import');
 
 Route::get('/events', 'HomeController@events');

@@ -59,6 +59,13 @@
                                <li >
                                 <a href="/sales"><i class="md  md-attach-money"></i> Sales</a>
                             </li>
+                             <li class="sub-menu">
+                                 <a href=""><i class="md md-work"></i>Tools</a>
+                                  <ul>
+                                    <li><a href="/tools/meatcalculator">Meat Calculator</a></li>
+                                 
+                                </ul>
+                            </li>
 
 
                         </ul>
