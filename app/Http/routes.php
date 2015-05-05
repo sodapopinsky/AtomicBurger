@@ -39,6 +39,7 @@ Route::post('/insert/writeup', 'EmployeesController@insertWriteUp');
 
 Route::get('/apitest', function()
 {
+	header('Content-Type: application/json');
 	$arr = ["one","two"];
     return json_encode($arr);
 });
