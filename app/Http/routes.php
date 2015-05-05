@@ -37,9 +37,5 @@ Route::post('/employees/create', 'EmployeesController@putCreateEmployee');
 Route::post('/delete/writeup/{id}', 'EmployeesController@deleteWriteUp');
 Route::post('/insert/writeup', 'EmployeesController@insertWriteUp');
 
-Route::get('/apitest', function()
-{
-	//header('Content-Type: application/json');
-	$arr = ["lbs"=>500];
-    return $arr;
-});
+Route::get('/api/meatcount', 'APIController@meatCount');
+
