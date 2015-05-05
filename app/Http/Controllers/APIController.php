@@ -123,7 +123,7 @@ $projection = array('thisAM' => $predictions[$dow]["am"], 'thisPM' => $predictio
 
 
 
-       		return json_encode($projection);
+       		return $projection;
     }
 
 
