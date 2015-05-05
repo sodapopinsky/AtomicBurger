@@ -27,3 +27,17 @@ Route::post('/inventory/doadjust/{inventoryId}', 'InventoryController@doAdjust')
 Route::post('/inventory/doadditem', 'InventoryController@doAddItem');
 Route::get('/inventory/{inventoryId}', 'InventoryController@objectDetail');
 
+Route::get('/employees', 'EmployeesController@index');
+Route::get('/employees/profile/{employeeId}', 'EmployeesController@employeeProfile');
+Route::post('/employees/delete/{employeeId}', 'EmployeesController@deleteEmployee');
+
+Route::get('/employees/create', 'EmployeesController@getCreateEmployee');
+Route::post('/employees/create', 'EmployeesController@putCreateEmployee');
+//should these be restful endpoints for cross platform stuff?... api/writeup/create?
+Route::post('/delete/writeup/{id}', 'EmployeesController@deleteWriteUp');
+Route::post('/insert/writeup', 'EmployeesController@insertWriteUp');
+
+Route::get('/apitest', function()
+{
+    return 'Hello World';
+});

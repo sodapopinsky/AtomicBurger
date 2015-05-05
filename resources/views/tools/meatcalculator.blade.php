@@ -22,7 +22,7 @@
        
                <div class="form-group">
                                 <div class="fg-line">
-                                    <input id="pattyCount" type="text" class="form-control input-lg" placeholder="Number of 2.5oz patties">
+                                    <input id="pattyCount" type="text" class="form-control input-lg" placeholder="Number of Burgers">
                                 </div>
                 </div>
                 <button id="calculate" class="btn bgm-blue waves-effect " style="margin-right:5px;">Calculate</button>
@@ -43,7 +43,8 @@
 <script>
 $("#calculate").click(
     function(){
-
+$("#ajaxpatties").html("");
+if($("#pattyCount").val().length > 0 && $.isNumeric($("#pattyCount").val()) ){
        $.ajax({
     type: 'GET',
     // make sure you respect the same origin policy with this url:
@@ -65,6 +66,7 @@ $("#calculate").click(
 
     }
 });
+   }
 
     }
     );

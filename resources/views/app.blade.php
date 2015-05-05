@@ -66,7 +66,10 @@
                                  
                                 </ul>
                             </li>
-
+                           
+                           <li >
+                                <a href="/employees"><i class="md md-account-circle"></i>Employee Files</a>
+                            </li>
 
                         </ul>
                     </div>

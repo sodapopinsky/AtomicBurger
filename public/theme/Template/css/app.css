@@ -12175,9 +12175,11 @@ input:focus {
   }
 }
 .listview .lv-title {
-  overflow: hidden;
-  text-overflow: ellipsis;
+  /*overflow: hidden;
   white-space: nowrap;
+  */
+  text-overflow: ellipsis;
+  
   display: block;
 }
 .listview a.lv-item:hover {
