@@ -41,5 +41,5 @@ Route::get('/apitest', function()
 {
 	header('Content-Type: application/json');
 	$arr = ["one","two"];
-    return json_encode($arr);
+    return $arr;
 });
