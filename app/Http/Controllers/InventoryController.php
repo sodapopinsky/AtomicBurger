@@ -16,6 +16,7 @@ class InventoryController extends BaseController {
 	{
 		$this->initializeParse();
 		$query = new ParseQuery("inventoryObjects");
+		$query->limit(1000);
 		$query->descending("createdAt");
 		$results = $query->find();
 		return view('inventory.index', ['results' => $results]);

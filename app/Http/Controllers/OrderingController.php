@@ -18,6 +18,7 @@ class OrderingController extends BaseController {
 
 		$query = new ParseQuery("orderForms");
 		$query->descending("createdAt");
+			$query->limit(1000);
 		$results = $query->find();
 		return view('ordering.index',['results' => $results]);
 	}
@@ -56,6 +57,7 @@ class OrderingController extends BaseController {
 		$query = new ParseQuery("orderFormItems");
 		$query->equalTo("orderForm",$orderForm);
 		$query->includeKey("item");
+			$query->limit(1000);
 		$orderFormItems = $query->find();
 		$orderFormItemIds = array();
 		foreach($orderFormItems as $item){
@@ -64,6 +66,7 @@ class OrderingController extends BaseController {
 
 		$query = new ParseQuery("inventoryObjects");
 		$query->descending("createdAt");
+		$query->limit(1000);
 		$results = $query->find();
 
 		return view('ordering.editform', ['orderFormItemIds' => $orderFormItemIds, 'orderForm' => $orderForm,'results' => $results]);
