@@ -3,7 +3,7 @@
 use Parse\ParseObject;
 use Parse\ParseQuery;
 use Parse\ParseClient;
-
+use Config;
 abstract class ParseRepository
 {
     protected $parseClass;
@@ -11,12 +11,13 @@ abstract class ParseRepository
     public function __construct($parseClass = null)
     {      
         $this->parseClass = $parseClass;
-        $this->initializeParse();
     }
 
     public function initializeParse(){
-        ParseClient::initialize('lTfgcKzUPZjigInKO4e7VP8p81Wzb6Fe2dJy6UXV', 'AtMILpMRqk1J1v7UTD06DUTgwwlTyHivDoVaX3vT', 'CxbuOBvdBlyql2UryNYbE2x8WIJ6eq27EXYSY2T6');
-        
+        ParseClient::initialize(
+            Config::get('constants.PARSE_APPID'),
+            Config::get('constants.PARSE_RESTKEY'),
+            Config::get('constants.PARSE_MASTERKEY'));
     }
 
     function getAll(){

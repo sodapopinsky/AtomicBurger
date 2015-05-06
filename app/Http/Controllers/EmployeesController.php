@@ -3,20 +3,21 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\AB\Employees\EmployeeRepository;
+use App\AB\WriteUps\WriteUpRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Input;
 
-
 class EmployeesController extends Controller {
 
- private $employees;
+	private $employees;
+	private $writeUps;
 
-	 public function __construct(EmployeeRepository $employees)
-    {
-    	 $this->employees = $employees;
-
-    }
+	public function __construct(EmployeeRepository $employees,WriteUpRepository $writeUps)
+	{
+		$this->employees = $employees;
+		$this->writeUps = $writeUps;
+	}
 
 	public function index()
 	{
@@ -27,13 +28,13 @@ class EmployeesController extends Controller {
 	public function employeeProfile($id)
 	{
 		$employee = $this->employees->getById($id);
-		$writeUps = $this->employees->getWriteUps($employee);
+		$writeUps = $this->writeUps->getWriteUps($employee);
 		return view('employees.profile',['employee' => $employee, 'writeUps' => $writeUps]);
 	}
 
 	public function getCreateEmployee(){
 
-			return view('employees.create');
+		return view('employees.create');
 	}
 	public function deleteEmployee($id){
 		$this->employees->deleteEmployee($id);
@@ -41,21 +42,20 @@ class EmployeesController extends Controller {
 
 	}
 
-public function putCreateEmployee(){
+	public function putCreateEmployee(){
 		$this->employees->createEmployee(Input::get('firstName'),Input::get('lastName'));
 		return redirect('/employees');
 
-}
+	}
 	public function deleteWriteUp($id)
 	{	
-		$this->employees->deleteWriteUp($id);
+		$this->writeUps->deleteWriteUp($id);
 		return Redirect::back()->with('message','Operation Successful !');
 	}
 
 	public function insertWriteUp()
 	{	
-		$this->employees->insertWriteUp(Input::get('writeUp'),Input::get('employeeId'));
-
+		$this->writeUps->insertWriteUp(Input::get('writeUp'),Input::get('employeeId'));
 		return Redirect::back();
 	}
 

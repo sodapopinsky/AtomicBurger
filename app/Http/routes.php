@@ -37,5 +37,5 @@ Route::post('/employees/create', 'EmployeesController@putCreateEmployee');
 Route::post('/delete/writeup/{id}', 'EmployeesController@deleteWriteUp');
 Route::post('/insert/writeup', 'EmployeesController@insertWriteUp');
 
-Route::get('/api/meatcount', 'APIController@meatCount');
+Route::get('/api/meatcount', 'API\APIToolsController@meatCount');
 
