@@ -6,6 +6,7 @@ use Parse\ParseQuery;
 use Parse\ParseClient;
 use Config;
 use Carbon\Carbon;
+date_default_timezone_set('America/Chicago');
 class SalesRepository extends ParseRepository
 {
 

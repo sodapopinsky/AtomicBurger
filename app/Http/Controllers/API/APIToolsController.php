@@ -9,7 +9,7 @@ use Parse\ParseQuery;
 use Parse\ParseClient;
 use Carbon\Carbon;
 use App\AB\Sales\SalesRepository;
-
+date_default_timezone_set('America/Chicago');
 class APIToolsController extends Controller
 {
 	private $sales;
