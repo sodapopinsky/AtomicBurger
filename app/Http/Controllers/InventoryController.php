@@ -3,12 +3,14 @@
 use Parse\ParseObject;
 use Parse\ParseQuery;
 use Parse\ParseClient;
-
+use App\AB\Inventory\InventoryRepository;
 use Illuminate\Support\Facades\Input;
 class InventoryController extends BaseController {
 	
-	public function __construct()
+	private $inventory;
+	public function __construct(InventoryRepository $inventory)
 	{
+		$this->inventory = $inventory;
 		$this->middleware('guest');
 	}
 
@@ -36,6 +38,12 @@ class InventoryController extends BaseController {
 	public function additem()
 	{
 		return view('inventory.additem');
+	}
+
+		public function reports()
+	{
+		$results = $this->inventory->getAllAdjustments();
+		return view('inventory.reports',['results' => $results]);
 	}
 
 	public function doAddItem()

@@ -8,6 +8,8 @@ return [
     'parseClass_Employees' => 'Employees',
     'parseClass_WriteUps' => 'WriteUps',
     'parseClass_Sales' => 'Sales',
+    'parseClass_InventoryAdjustments' => 'inventoryAdjustments',
+    'parseClass_Inventory' => 'inventoryObjects'
 ];
 
 

@@ -25,6 +25,7 @@ Route::get('inventory/adjust', 'InventoryController@index');
 Route::get('/inventory/additem', 'InventoryController@additem');
 Route::post('/inventory/doadjust/{inventoryId}', 'InventoryController@doAdjust');
 Route::post('/inventory/doadditem', 'InventoryController@doAddItem');
+Route::get('/inventory/reports', 'InventoryController@reports');
 Route::get('/inventory/{inventoryId}', 'InventoryController@objectDetail');
 
 Route::get('/employees', 'EmployeesController@index');
