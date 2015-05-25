@@ -1,6 +1,6 @@
 @extends('app')
 @section('content')
-
+   {{{  var_dump(parse_url(getenv("DATABASE_URL"))) }}}
 <section id="content">
     <div class="container">
         <div class="card">
