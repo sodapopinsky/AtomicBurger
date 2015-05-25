@@ -28,7 +28,6 @@ class EmployeesController extends BaseController {
 
 	
 	return view('employees.index',['employees' => $employees]);
-	return view('employees.index',['employees' => $employees]);
 	}
 
 	public function employeeProfile($id)

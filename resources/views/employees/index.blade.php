@@ -13,7 +13,6 @@
             <div class="listview" style="padding-bottom:10px;">
                @foreach ($employees as $item)
 
-               fdafds
                 <a class="lv-item" href="/employees/profile/{{{ $item->id }}}">
                  <div class="media">
                     <div class="media-body" style="padding:5px;">

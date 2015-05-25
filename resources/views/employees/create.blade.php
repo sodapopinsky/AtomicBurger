@@ -1,6 +1,6 @@
 @extends('app')
+
 @section('content')
-{{{ var_dump($errors) }}}
 <section id="content">
   <div class="container">
     <div class="card">
@@ -26,7 +26,10 @@
 
       </div>
     </div>
-    <div id="error"  style="display:none" class="alert alert-danger" role="alert">Please enter a valid name.</div>
+      @if(count($errors) > 0)
+          <div id="error"   class="alert alert-danger" role="alert">Please enter a valid name.</div>
+      @endif
+
     <div class="pull-right">
       <a class="btn bgm-gray waves-effect" href="/employees">Cancel</a>
       <button id="save" class="btn bgm-blue waves-effect " style="margin-right:5px;">Create</button>               
@@ -34,26 +37,10 @@
   </form> 
   
 </div>
-</section>
+
 </section>
 
 @endsection
 
 
-@section('js')
-<script>
-  $( "#save" ).click(function( event ) {
-   var value = $( "#firstName" ).val();
-
-   event.preventDefault();
-   if ($( "#firstName" ).val().length > 0 && $( "#lastName" ).val().length > 0){
-    $( "#myForm" ).submit();
-  }
-  else{
-    $( "#error" ).show();
-  }
-});
-  
-</script>
-@endsection
 
