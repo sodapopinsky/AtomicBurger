@@ -1,6 +1,6 @@
 @extends('app')
 @section('content')
-
+{{{ var_dump($errors) }}}
 <section id="content">
   <div class="container">
     <div class="card">

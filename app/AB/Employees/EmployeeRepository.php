@@ -1,34 +1,19 @@
 <?php namespace App\AB\Employees;
 
-use App\AB\Core\ParseRepository;
-use Parse\ParseObject;
-use Parse\ParseQuery;
-use Parse\ParseClient;
+use App\AB\Core\EloquentRepository;
 use Config;
-class EmployeeRepository extends ParseRepository
+class EmployeeRepository extends EloquentRepository
 {
 
-    public function __construct()
+   protected $model;
+   public function __construct(Employee $model)
     {
-        $this->parseClass = Config::get('constants.parseClass_Employees');
-        $this->initializeParse();
+        $this->model = $model;
     }
 
-     public function createEmployee($firstName, $lastName)
+
+    public function getEmployeeForm()
     {
-        $object = new ParseObject($this->parseClass);
-        $object->set("firstName",$firstName);
-        $object->set("lastName",$lastName);
-        $object->save();
-        
+        return new EmployeeForm;
     }
-    
-    public function deleteEmployee($id){
-         $object = $this->getById($id);
-         $object->destroy();
-        return;
-    }
-   
-
-
 }

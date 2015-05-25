@@ -12,10 +12,12 @@
 
             <div class="listview" style="padding-bottom:10px;">
                @foreach ($employees as $item)
-                <a class="lv-item" href="/employees/profile/{{{ $item->getObjectId() }}}">
+
+               fdafds
+                <a class="lv-item" href="/employees/profile/{{{ $item->id }}}">
                  <div class="media">
                     <div class="media-body" style="padding:5px;">
-                        <div class="lv-title">{{{ $item->get('firstName')}}} {{{ $item->get('lastName')}}}</div>
+                        <div class="lv-title">{{{ $item->firstName }}} {{{ $item->lastName }}}</div>
 
                     </div>
                  </div>
