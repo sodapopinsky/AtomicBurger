@@ -71,10 +71,10 @@ return [
 
 		'pgsql' => [
 			'driver'   => 'pgsql',
-			'host'     => env($host, 'localhost'),
-			'database' => env($database, 'atomicburger'),
-			'username' => env($username, 'Nick'),
-			'password' => env($password, ''),
+			'host'     => env($host),  //localhost
+			'database' => env($database),  //atomicburger
+			'username' => env($username),  //Nick
+			'password' => env($password), //''
 			'charset'  => 'utf8',
 			'prefix'   => '',
 			'schema'   => 'public',
