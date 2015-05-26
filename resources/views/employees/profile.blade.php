@@ -48,7 +48,7 @@
                             </div>
                             <div class="modal-body">
 
-                                <input type="hidden" name="employeeId" value="{{{$employee->id}}}">
+                                <input type="hidden" name="employee" value="{{{$employee->id}}}">
 
                                 <div class="form-group">
                                     <div class="fg-line">

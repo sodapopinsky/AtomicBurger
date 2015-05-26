@@ -56,14 +56,11 @@ class EmployeesController extends BaseController {
 	public function putCreateEmployee(){
 
 		$form = $this->employees->getEmployeeForm();
-		if ( ! $form->isValid()) {
-            return Redirect::back()->with('errors',$form->getErrors());
+		if ( ! $form->isValid())
+        {
+            return Redirect::back()->with('errors', $form->getErrors());
         }
-
-
-
-
- $employee = $this->employees->getNew(["firstName"=>Input::get('firstName'),"lastName"=>Input::get('lastName'),"passcode"=>3]);
+        $employee = $this->employees->getNew(["firstName"=>Input::get('firstName'),"lastName"=>Input::get('lastName'),"passcode"=>3]);
         if ( ! $employee->isValid()) {
              return Redirect::back()->with('errors',$employee->getErrors());
         }
@@ -74,15 +71,26 @@ class EmployeesController extends BaseController {
 
 	}
 	public function deleteWriteUp($id)
-	{	
-		$this->writeUps->deleteWriteUp($id);
+	{
+        $writeUp = $this->writeUps->requireById($id);
+        $writeUp->delete();
 		return Redirect::back()->with('message','Operation Successful !');
 	}
 
 	public function postWriteUp()
-	{	
-		
-		$this->writeUps->insertWriteUp(Input::get('writeUp'),Input::get('employeeId'));
+	{
+        $form = $this->writeUps->getWriteUpForm();
+        if ( ! $form->isValid())
+        {
+            return Redirect::back()->with('errors', $form->getErrors());
+        }
+
+        $writeUp = $this->writeUps->getNew(["writeUp"=>Input::get('writeUp'),"employee"=>Input::get('employee')]);
+        if ( ! $writeUp->isValid()) {
+            return Redirect::back()->with('errors',$writeUp->getErrors());
+        }
+
+        $this->writeUps->save($writeUp);
 		return Redirect::back();
 	}
 

@@ -10,5 +10,9 @@ class WriteUp extends Entity
     protected $table    = 'write_ups';
     protected $fillable = ['employee', 'writeUp'];
 
+    protected $validationRules = [
+        'writeUp'      => 'required',
+        'employee' => 'required|integer'
+    ];
 
 }

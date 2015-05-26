@@ -1,7 +1,7 @@
 <?php namespace App\AB\WriteUps;
 
 use App\AB\Core\EloquentRepository;
-use Config;
+
 class WriteUpRepository extends EloquentRepository
 {
     
@@ -11,10 +11,15 @@ class WriteUpRepository extends EloquentRepository
         $this->model = $model;
     }
 
+    public function getWriteUpForm()
+    {
+        return new WriteUpForm;
+    }
+
     public function getWriteUps($employeeId){
          return $this->model->where('employee', '=', $employeeId)->get();
     }
 
-    
+
 
 }

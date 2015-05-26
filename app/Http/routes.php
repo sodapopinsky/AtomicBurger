@@ -36,7 +36,7 @@ Route::get('/employees/create', 'EmployeesController@getCreateEmployee');
 Route::post('/employees/create', 'EmployeesController@putCreateEmployee');
 //should these be restful endpoints for cross platform stuff?... api/writeup/create?
 Route::post('/delete/writeup/{id}', 'EmployeesController@deleteWriteUp');
-Route::post('/insert/writeup', 'EmployeesController@insertWriteUp');
+Route::post('/insert/writeup', 'EmployeesController@postWriteUp');
 
 Route::get('/api/meatcount', 'API\APIToolsController@meatCount');
 
