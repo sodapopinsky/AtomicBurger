@@ -1,30 +1,18 @@
 <?php namespace App\AB\Inventory;
 
-use App\AB\Core\ParseRepository;
-use Parse\ParseObject;
-use Parse\ParseQuery;
-use Parse\ParseClient;
-use Config;
-class InventoryRepository extends ParseRepository
+use App\AB\Core\EloquentRepository;
+
+class InventoryRepository extends EloquentRepository
 {
 
-    public function __construct()
+    protected $model;
+
+
+    public function __construct(Inventory $model)
     {
-        $this->parseClass = Config::get('constants.parseClass_InventoryAdjustments');
-        $this->initializeParse();
+        $this->model = $model;
     }
 
-  public function getAllAdjustments()
-    {
 
 
-         $query = new ParseQuery($this->parseClass);
-	$query->descending("createdAt");
-			$query->limit(402);
-	$query->includeKey("inventoryObject");
-        $results = $query->find();
-        return $results;
-
-    }
-   
 }

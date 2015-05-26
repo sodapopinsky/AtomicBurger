@@ -1,7 +1,7 @@
 <?php namespace App\AB\Employees;
 
 use App\AB\Core\EloquentRepository;
-use Config;
+
 class EmployeeRepository extends EloquentRepository
 {
 
