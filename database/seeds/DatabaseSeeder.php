@@ -13,8 +13,8 @@ class DatabaseSeeder extends Seeder {
 	public function run()
 	{
 		Model::unguard();
-	
-		 $this->call('InventorySeeder');
+         $this->call('InventorySeeder');
+		 $this->call('SalesSeeder');
 	}
 
 }
