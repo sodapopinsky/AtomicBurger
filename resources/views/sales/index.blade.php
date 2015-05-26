@@ -52,7 +52,7 @@
 			$('#calendar-widget').fullCalendar({
 				contentHeight: 'auto',
 				theme: true,
-				
+
 				header: {
 					right: '',
 					center: 'prev, title, next',
@@ -78,7 +78,7 @@ $( "#target" ).click();
 				events: function(start, end, timezone, callback) {
 					$.ajax({
 
-						url: '/events',
+						url: '/sales/getsales',
 						dataType: 'json',
 						data: {
                 // our hypothetical feed requires UNIX timestamps

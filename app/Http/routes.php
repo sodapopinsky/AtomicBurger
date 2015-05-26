@@ -1,17 +1,21 @@
 <?php
 
+//SALES
+Route::get('/sales', 'SalesController@index');
+Route::get('/sales/getsales', 'SalesController@getSales');
+
 Route::get('/tools/meatcalculator', 'ToolsController@meatCalculator');
 Route::get('/calculatemeat', 'ToolsController@calculateMeat');
 
-Route::get('/test', 'ToolsController@test');
-Route::get('/sales', 'SalesController@index');
+
+
 Route::get('/', 'OrderingController@index');
 Route::post('/sales/deleteprojection', 'SalesController@deleteProjection');
 Route::post('/sales/saveprojection', 'SalesController@saveProjection');
 
 Route::get('/import', 'SalesController@import');
 
-Route::get('/events', 'HomeController@events');
+
 
 Route::get('/ordering', 'OrderingController@index');
 Route::get('/ordering/orderform/{orderFormId}', 'OrderingController@orderForm');

@@ -1,12 +1,22 @@
 <?php  namespace App\Http\Controllers;
-use Parse\ParseObject;
-use Parse\ParseQuery;
-use Parse\ParseClient;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\Input;
+use App\AB\Sales\SalesRepository;
+
 class SalesController extends Controller
 {
-     protected function index()
+
+    private $sales;
+
+    public function __construct(SalesRepository $sales)
     {
-       		return view('index');
+        $this->sales = $sales;
+    }
+
+
+    protected function index()
+    {
+       		return view('sales.index');
     }
 
     protected function import()
@@ -14,9 +24,15 @@ class SalesController extends Controller
        		return view('import');
     }
 
-      protected function events()
-    {
-       		return view('events');
+      protected function getSales()
+      {
+
+
+        $events = $this->sales->getSalesEvents(Input::get('start'),Input::get('end'));
+
+         return json_encode($events);
+
+
     }
 
      protected function deleteProjection()
