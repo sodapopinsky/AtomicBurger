@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72530de5-c830-4130-be51-3a6d2e6b1356" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AB/WriteUps/WriteUpForm.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/EmployeesController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/EmployeesController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AB/Core/FormModel.php" afterPath="$PROJECT_DIR$/app/AB/Core/FormModel.php" />
@@ -9,6 +10,17 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AB/WriteUps/WriteUpRepository.php" afterPath="$PROJECT_DIR$/app/AB/WriteUps/WriteUpRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/employees/profile.blade.php" afterPath="$PROJECT_DIR$/resources/views/employees/profile.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/AB/Inventory/Inventory.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/seeds/InventorySeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/AtomicBurger.iml" afterPath="$PROJECT_DIR$/.idea/AtomicBurger.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AB/Employees/EmployeeRepository.php" afterPath="$PROJECT_DIR$/app/AB/Employees/EmployeeRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AB/Core/Entity.php" afterPath="$PROJECT_DIR$/app/AB/Core/Entity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/InventoryController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/InventoryController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AB/Inventory/InventoryRepository.php" afterPath="$PROJECT_DIR$/app/AB/Inventory/InventoryRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/inventory/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/inventory/index.blade.php" />
+>>>>>>> switchInventory
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AtomicBurger.iws" />
@@ -28,11 +40,18 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <option name="FLATTEN" value="false" />
+    <option name="GROUP_BY_TYPE" value="true" />
+    <option name="SORT_CHILDREN" value="false" />
+    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="AtomicBurger" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <splitter split-orientation="horizontal" split-proportion="0.41992188">
       <split-first>
         <leaf>
@@ -41,16 +60,34 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="-17.814816" vertical-offset="569" max-vertical-offset="4242">
                   <caret line="50" column="67" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
+=======
+    <splitter split-orientation="horizontal" split-proportion="0.21265142">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="InventoryController.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InventoryController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="63" max-vertical-offset="1680">
+                  <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+>>>>>>> switchInventory
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
           <file leaf-file-name="WriteUpForm.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/AB/WriteUps/WriteUpForm.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="399">
                   <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+=======
+          <file leaf-file-name="EmployeesController.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeesController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.029745042" vertical-offset="0" max-vertical-offset="2016">
+                  <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+>>>>>>> switchInventory
                   <folding />
                 </state>
               </provider>
@@ -59,13 +96,19 @@
           <file leaf-file-name="EmployeeRepository.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/AB/Employees/EmployeeRepository.php">
               <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
                 <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
                   <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="17" selection-end-column="5" />
+=======
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+                  <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+>>>>>>> switchInventory
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
           <file leaf-file-name="EmployeesController.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeesController.php">
               <provider selected="true" editor-type-id="text-editor">
@@ -73,11 +116,21 @@
                   <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
                   <folding>
                     <element signature="e#39#61#0#PHP" expanded="true" />
+=======
+          <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/resources/views/inventory/index.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1113">
+                  <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#803#824#0#HTML" expanded="true" />
+>>>>>>> switchInventory
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
+<<<<<<< HEAD
           <file leaf-file-name="EloquentRepository.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/AB/Core/EloquentRepository.php">
               <provider selected="true" editor-type-id="text-editor">
@@ -133,6 +186,13 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="483">
                   <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+=======
+          <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/resources/views/employees/index.blade.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
+                  <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+>>>>>>> switchInventory
                   <folding />
                 </state>
               </provider>
@@ -141,6 +201,7 @@
         </leaf>
       </split-first>
       <split-second>
+<<<<<<< HEAD
         <leaf>
           <file leaf-file-name="EloquentRepository.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/AB/Core/EloquentRepository.php">
@@ -173,6 +234,143 @@
             </entry>
           </file>
         </leaf>
+=======
+        <splitter split-orientation="vertical" split-proportion="0.6097222">
+          <split-first>
+            <leaf>
+              <file leaf-file-name="InventoryController.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InventoryController.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="-8.555555" vertical-offset="189" max-vertical-offset="1764">
+                      <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+                      <folding>
+                        <element signature="e#39#61#0#PHP" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="data.json" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/storage/app/data.json">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="40417" max-vertical-offset="41349">
+                      <caret line="1963" column="3" selection-start-line="1963" selection-start-column="3" selection-end-line="1963" selection-end-column="3" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="InventorySeeder.php" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/database/seeds/InventorySeeder.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.495283" vertical-offset="0" max-vertical-offset="848">
+                      <caret line="20" column="123" selection-start-line="20" selection-start-column="123" selection-end-line="20" selection-end-column="123" />
+                      <folding>
+                        <element signature="e#8#39#0#PHP" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="Builder.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="36972" max-vertical-offset="42000">
+                      <caret line="1789" column="37" selection-start-line="1789" selection-start-column="37" selection-end-line="1789" selection-end-column="37" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="Grammar.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="14460" max-vertical-offset="16086">
+                      <caret line="703" column="20" selection-start-line="703" selection-start-column="20" selection-end-line="703" selection-end-column="20" />
+                      <folding>
+                        <marker date="1431382500000" expanded="true" signature="15781:15818" placeholder="insert into ..." />
+                        <marker date="1431382500000" expanded="true" signature="17850:17869" placeholder="delete from ..." />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="Employee.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/app/AB/Employees/Employee.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="567">
+                      <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+                      <folding>
+                        <element signature="e#35#80#0#PHP" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="Entity.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/app/AB/Core/Entity.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="1449">
+                      <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                      <folding>
+                        <element signature="e#30#69#0#PHP" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="Inventory.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/app/AB/Inventory/Inventory.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
+                      <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+                      <folding>
+                        <element signature="e#36#81#0#PHP" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="EmployeesSeeder.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/database/seeds/EmployeesSeeder.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
+                      <caret line="15" column="10" selection-start-line="12" selection-start-column="6" selection-end-line="15" selection-end-column="10" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="DatabaseSeeder.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="546">
+                      <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+                      <folding>
+                        <element signature="e#7#38#0#PHP" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file leaf-file-name="InventoryRepository.php" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/app/AB/Inventory/InventoryRepository.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state vertical-scroll-proportion="0.35795453" vertical-offset="0" max-vertical-offset="528">
+                      <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
+>>>>>>> switchInventory
       </split-second>
     </splitter>
   </component>
@@ -246,15 +444,14 @@
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
         <option value="$PROJECT_DIR$/app/AB/Core/EloquentRepository.php" />
-        <option value="$PROJECT_DIR$/app/AB/Employees/Employee.php" />
         <option value="$PROJECT_DIR$/app/AB/Employees/EmployeeForm.php" />
         <option value="$PROJECT_DIR$/resources/views/employees/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/employees/create.blade.php" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/resources/views/ordering/index.blade.php" />
-        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/database.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/AB/Core/FormModel.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/AB/WriteUps/WriteUpForm.php" />
@@ -263,6 +460,20 @@
         <option value="$PROJECT_DIR$/app/AB/WriteUps/WriteUpRepository.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/EmployeesController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2015_05_25_203623_createInventoryItemsTable.php" />
+=======
+        <option value="$PROJECT_DIR$/app/AB/Employees/Employee.php" />
+        <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php" />
+        <option value="$PROJECT_DIR$/app/AB/Core/Entity.php" />
+        <option value="$PROJECT_DIR$/app/AB/Employees/EmployeeRepository.php" />
+        <option value="$PROJECT_DIR$/resources/views/inventory/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/AB/Inventory/Inventory.php" />
+        <option value="$PROJECT_DIR$/app/AB/Inventory/InventoryRepository.php" />
+        <option value="$PROJECT_DIR$/app/AB/data.json" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/InventoryController.php" />
+        <option value="$PROJECT_DIR$/storage/app/data.json" />
+        <option value="$PROJECT_DIR$/database/seeds/InventorySeeder.php" />
+>>>>>>> switchInventory
       </list>
     </option>
   </component>
@@ -329,6 +540,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -344,6 +556,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AtomicBurger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AtomicBurger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AtomicBurger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AtomicBurger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AtomicBurger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="storage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -425,21 +669,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AtomicBurger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AtomicBurger" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AB" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="true" />
+<<<<<<< HEAD
     <property name="options.lastSelected" value="preferences.pluginManager" />
+=======
+    <property name="options.lastSelected" value="fileTemplates" />
+>>>>>>> switchInventory
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="migrations/&#9;FILE&#9;file:///Users/Nick/Apps/AtomicBurger/database/migrations&#10;folding&#9;ACTION&#9;FoldingGroup&#10;live te&#9;ACTION&#9;SaveAsTemplate&#10;file templ&#9;ACTION&#9;SaveFileAsTemplate" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="full.screen.before.presentation.mode" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/storage/app" />
+    </key>
   </component>
   <component name="RunManager" selected="PHP Web Application.AtomicBurger">
     <configuration default="false" name="User.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/app/User.php">
@@ -484,9 +755,15 @@
       <method />
     </configuration>
     <list size="3">
+<<<<<<< HEAD
       <item index="0" class="java.lang.String" itemvalue="PHP Script.User.php" />
       <item index="1" class="java.lang.String" itemvalue="PHP Script.EmployeesController.php" />
       <item index="2" class="java.lang.String" itemvalue="PHP Web Application.AtomicBurger" />
+=======
+      <item index="0" class="java.lang.String" itemvalue="PHP Web Application.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="PHP Script.User.php" />
+      <item index="2" class="java.lang.String" itemvalue="PHP Script.EmployeesController.php" />
+>>>>>>> switchInventory
     </list>
     <recent_temporary>
       <list size="2">
@@ -510,6 +787,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
+<<<<<<< HEAD
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -524,39 +802,32 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4152344" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+=======
+    <editor active="true" />
+    <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21933623" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16923077" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22114538" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12734374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> switchInventory
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2749684" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -587,6 +858,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
@@ -654,6 +926,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SalesController.php">
+=======
+    <entry file="file://$PROJECT_DIR$/app/AB/Employees/EmployeeRepository.php">
+>>>>>>> switchInventory
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="740">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -663,27 +938,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ToolsController.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.69734347" vertical-offset="609" max-vertical-offset="2877">
           <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2079">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> switchInventory
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BaseController.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.13946868" vertical-offset="0" max-vertical-offset="1054">
           <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
           <folding>
             <element signature="e#39#61#0#PHP" expanded="false" />
           </folding>
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> switchInventory
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="4.596008" vertical-offset="3376" max-vertical-offset="14343">
           <caret line="392" column="0" selection-start-line="392" selection-start-column="0" selection-end-line="392" selection-end-column="0" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> switchInventory
         </state>
       </provider>
     </entry>
@@ -705,11 +995,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/employees/create.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1092">
           <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding>
             <element signature="e#1074#1099#0#HTML" expanded="false" />
           </folding>
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="756">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+>>>>>>> switchInventory
         </state>
       </provider>
     </entry>
@@ -723,9 +1018,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/ordering/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="735">
           <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="756">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+>>>>>>> switchInventory
         </state>
       </provider>
     </entry>
@@ -739,9 +1039,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="856">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="756">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+>>>>>>> switchInventory
         </state>
       </provider>
     </entry>
@@ -763,9 +1068,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3066">
           <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> switchInventory
         </state>
       </provider>
     </entry>
@@ -773,7 +1083,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1848">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -787,6 +1096,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/*Reference/laravel.io/app/Lio/Articles/ArticleSearch.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1412">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -798,14 +1108,23 @@
         <state vertical-scroll-proportion="-0.342068" vertical-offset="483" max-vertical-offset="3003">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
+          <caret line="30" column="7" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+>>>>>>> switchInventory
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/*Reference/laravel.io/app/Lio/Articles/Article.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2373">
           <caret line="0" column="25" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="25" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="49" />
+>>>>>>> switchInventory
         </state>
       </provider>
     </entry>
@@ -813,6 +1132,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1412">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
           <folding />
         </state>
       </provider>
@@ -830,14 +1150,21 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1995">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+=======
+>>>>>>> switchInventory
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/*Reference/laravel.io/app/Lio/Articles/ArticleCreatorListener.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1412">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.43833017" vertical-offset="0" max-vertical-offset="3003">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+>>>>>>> switchInventory
         </state>
       </provider>
     </entry>
@@ -845,20 +1172,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1407">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Redirect.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
           <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
           <folding />
+=======
+        <state vertical-scroll-proportion="0.69734347" vertical-offset="609" max-vertical-offset="2877">
+          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+>>>>>>> switchInventory
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state vertical-scroll-proportion="0.0" vertical-offset="3418" max-vertical-offset="4830">
           <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
           <folding />
@@ -869,18 +1201,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1008">
           <caret line="38" column="56" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
+=======
+        <state vertical-scroll-proportion="0.13946868" vertical-offset="0" max-vertical-offset="1054">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AB/Core/EloquentRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7585551" vertical-offset="0" max-vertical-offset="1785">
+          <caret line="38" column="52" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+>>>>>>> switchInventory
           <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/AB/Employees/EmployeeForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19334278" vertical-offset="0" max-vertical-offset="1412">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.596008" vertical-offset="3376" max-vertical-offset="14343">
+          <caret line="392" column="0" selection-start-line="392" selection-start-column="0" selection-end-line="392" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/AB/Employees/EmployeeForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19334278" vertical-offset="0" max-vertical-offset="1412">
+        <state vertical-scroll-proportion="0.2595057" vertical-offset="0" max-vertical-offset="1052">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="294" max-vertical-offset="3633">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+>>>>>>> switchInventory
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/AB/Core/FormModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1113">
@@ -895,42 +1260,314 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="980" max-vertical-offset="3633">
           <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/resources/views/employees/create.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1092">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="856">
+          <caret line="0" column="41" selection-start-line="0" selection-start-column="41" selection-end-line="0" selection-end-column="41" />
+>>>>>>> switchInventory
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/AB/Employees/Employee.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="546">
           <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="18" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/resources/views/ordering/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45578232" vertical-offset="224" max-vertical-offset="1400">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="856">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20408164" vertical-offset="0" max-vertical-offset="1176">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+>>>>>>> switchInventory
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/AB/WriteUps/WriteUp.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="483">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06919275" vertical-offset="0" max-vertical-offset="3066">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+>>>>>>> switchInventory
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/AB/WriteUps/WriteUpForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1412">
           <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
           <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33235726" vertical-offset="31252" max-vertical-offset="71022">
+          <caret line="1522" column="62" selection-start-line="1522" selection-start-column="52" selection-end-line="1522" selection-end-column="62" />
+          <folding>
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431382500000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/employees/profile.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.814816" vertical-offset="569" max-vertical-offset="4242">
-          <caret line="50" column="67" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
+        <state vertical-scroll-proportion="-0.79859155" vertical-offset="1491" max-vertical-offset="4242">
+          <caret line="44" column="69" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/inventory/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1113">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#803#824#0#HTML" expanded="true" />
+          </folding>
+>>>>>>> switchInventory
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/employees/profile.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state vertical-scroll-proportion="-17.814816" vertical-offset="569" max-vertical-offset="4242">
+          <caret line="50" column="67" selection-start-line="50" selection-start-column="67" selection-end-line="50" selection-end-column="67" />
+=======
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+>>>>>>> switchInventory
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/AB/Employees/EmployeeRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
@@ -951,26 +1588,95 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="5250" max-vertical-offset="6594">
           <caret line="292" column="6" selection-start-line="292" selection-start-column="6" selection-end-line="294" selection-end-column="27" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/AB/Employees/Employee.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="567">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding>
+            <element signature="e#35#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AB/Inventory/Inventory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="e#36#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AB/Core/Entity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2" max-vertical-offset="1449">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#30#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AB/Inventory/InventoryRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35795453" vertical-offset="0" max-vertical-offset="528">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+>>>>>>> switchInventory
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/*Reference/laravel.io/app/controllers/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2079">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/AB/Employees/EmployeeRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+>>>>>>> switchInventory
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/AB/WriteUps/WriteUpRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="651">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.029745042" vertical-offset="0" max-vertical-offset="2016">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="546">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding>
+            <element signature="e#7#38#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/EmployeesSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="609">
+          <caret line="15" column="10" selection-start-line="12" selection-start-column="6" selection-end-line="15" selection-end-column="10" />
+>>>>>>> switchInventory
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EmployeesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.296297" vertical-offset="1054" max-vertical-offset="2184">
@@ -993,15 +1699,67 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
           <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+=======
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="36972" max-vertical-offset="42000">
+          <caret line="1789" column="37" selection-start-line="1789" selection-start-column="37" selection-end-line="1789" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Grammars/Grammar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="14460" max-vertical-offset="16086">
+          <caret line="703" column="20" selection-start-line="703" selection-start-column="20" selection-end-line="703" selection-end-column="20" />
+          <folding>
+            <marker date="1431382500000" expanded="true" signature="15781:15818" placeholder="insert into ..." />
+            <marker date="1431382500000" expanded="true" signature="17850:17869" placeholder="delete from ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_ide_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33254716" vertical-offset="54192" max-vertical-offset="241962">
+          <caret line="2600" column="31" selection-start-line="2600" selection-start-column="31" selection-end-line="2600" selection-end-column="31" />
+>>>>>>> switchInventory
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/database/migrations/2015_05_25_203623_createInventoryItemsTable.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39165187" vertical-offset="0" max-vertical-offset="1126">
           <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+=======
+    <entry file="file://$PROJECT_DIR$/storage/app/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="40417" max-vertical-offset="41349">
+          <caret line="1963" column="3" selection-start-line="1963" selection-start-column="3" selection-end-line="1963" selection-end-column="3" />
+>>>>>>> switchInventory
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/InventoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.555555" vertical-offset="189" max-vertical-offset="1764">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#39#61#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/InventorySeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.495283" vertical-offset="0" max-vertical-offset="848">
+          <caret line="20" column="123" selection-start-line="20" selection-start-column="123" selection-end-line="20" selection-end-column="123" />
+          <folding>
+            <element signature="e#8#39#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

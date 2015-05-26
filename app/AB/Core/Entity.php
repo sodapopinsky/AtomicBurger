@@ -8,7 +8,7 @@ use App\AB\Core\Exceptions\NoValidationRulesFoundException;
 abstract class Entity extends Model
 {
 
-  protected $validationRules = [];
+    protected $validationRules = [];
     protected $validator;
     
     public function isValid()

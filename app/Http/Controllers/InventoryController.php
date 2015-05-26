@@ -5,6 +5,8 @@ use Parse\ParseQuery;
 use Parse\ParseClient;
 use App\AB\Inventory\InventoryRepository;
 use Illuminate\Support\Facades\Input;
+
+
 class InventoryController extends BaseController {
 	
 	private $inventory;
@@ -16,12 +18,9 @@ class InventoryController extends BaseController {
 
 	public function index()
 	{
-		$this->initializeParse();
-		$query = new ParseQuery("inventoryObjects");
-		$query->limit(1000);
-		$query->descending("createdAt");
-		$results = $query->find();
-		return view('inventory.index', ['results' => $results]);
+
+        $inventory = $this->inventory->getAll();
+		return view('inventory.index', ['results' => $inventory]);
 	}
 
 	public function objectDetail($id)

@@ -22,17 +22,18 @@
 
           <tbody>
             @foreach ($results as $item)
+
             <tr>
             <td>
-                <a href="/inventory/{{{ $item->getObjectId() }}}">{{{ $item->get('name') }}}</a>
+                <a href="/inventory/$item->id">{{{ $item->name }}}</a>
                 <div style="color:#9E9E9E"><small>Last updated <span style="color:#8BC34A">
   
-                {{{ Carbon::instance($item->getUpdatedAt())->diffForHumans() }}}
+
                  </span></small></div>
               </td>
               <td>
                 <div class="pull-right" >
-                  <h4> {{{ floatval($item->get('quantityOnHand')) }}} </h4>
+                  <h4> {{{ floatval($item->quantityOnHand) }}} </h4>
                 </div>
               </td>
             </tr>
