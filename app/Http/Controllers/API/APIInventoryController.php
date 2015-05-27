@@ -4,6 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\AB\Inventory\InventoryRepository;
 use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\Input;
 class APIInventoryController extends Controller {
 
     /**
@@ -48,7 +49,8 @@ class APIInventoryController extends Controller {
 	 */
 	public function store()
 	{
-		return Response::json(["test"]);
+        $arr = Input::get("objects");
+		return Response::json($arr);
 	}
 
 	/**
