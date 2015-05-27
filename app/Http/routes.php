@@ -44,3 +44,5 @@ Route::post('/insert/writeup', 'EmployeesController@postWriteUp');
 
 Route::get('/api/meatcount', 'API\APIToolsController@meatCount');
 
+Route::resource('api/1/inventory', 'API\APIInventoryController');
+
