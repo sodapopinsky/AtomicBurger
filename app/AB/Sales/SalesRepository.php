@@ -2,7 +2,7 @@
 
 use App\AB\Core\EloquentRepository;
 use Carbon\Carbon;
-
+use Illuminate\Support\Facades\DB;
 class SalesRepository extends EloquentRepository {
 
     private $salesProjectionCushion = 1.15;
@@ -13,15 +13,29 @@ class SalesRepository extends EloquentRepository {
         $this->model = $model;
         $this->events = array();
     }
+    public function getSalesForDateRange($start,$end){
+        $sales = $this->model->where('date', '>', $start)->where('date', '<', $end)->get();
+        return $sales;
+    }
 
     public function getSalesEvents($start, $end)
     {
         $start = Carbon::createFromTimeStamp($start);
         $end = Carbon::createFromTimeStamp($end);
+        $start = Carbon::now();
+        $end = Carbon::now();
         $end->addWeek();
         $start->subWeeks(4);
-        $sales = $this->model->where('date', '>', $start)->where('date', '<', $end)->get();
+        $sales = $this->getSalesForDateRange($start,$end);
 
+
+
+        /*
+        $query = new ParseQuery("SalesProjections");
+        $query->greaterThan("date",Carbon::now());
+        $query->lessThan("date",$end);
+        $projections = $query->find();
+*/
         $this->appendPastSales($sales);
         if ($end->gt(Carbon::now()))
         {
@@ -41,7 +55,7 @@ class SalesRepository extends EloquentRepository {
                     "start"       => $item->date,
                     "end"         => $item->date,
                     "className"   => 'bgm-cyan',
-                    "shift"       => "AM",
+                    "shift"       => "am",
                     "editable"    => false,
                     "amount"      => $item->am,
                     "displayDate" => $item->date
@@ -55,7 +69,7 @@ class SalesRepository extends EloquentRepository {
                     "start"       => $item->date,
                     "end"         => $item->date,
                     "className"   => 'bgm-cyan',
-                    "shift"       => "PM",
+                    "shift"       => "pm",
                     "amount"      => $item->pm,
                     "editable"    => false,
                     "displayDate" => $item->date
@@ -82,14 +96,14 @@ class SalesRepository extends EloquentRepository {
     private function appendPredictions($sales, $end)
     {
         //add projections
-        /*
+            $projections = DB::table('sales_projections')->get();
                     foreach($projections as $value){
-                        $dt = Carbon::instance($value->date);
+                        $dt = Carbon::createFromFormat('Y-m-d', $value->date);
 
                         $event =
                             array(
                                 "title"=> strtoupper($value->shift) . " - $".number_format($value->amount),
-                                "id"=>$value->getObjectId(),
+                                "id"=>$value->id,
                                 "start"=>$dt->toDateTimeString(),
                                 "end"=>$dt->toDateTimeString(),
                                 "className" => 'bgm-orange',
@@ -98,11 +112,10 @@ class SalesRepository extends EloquentRepository {
                                 "editable" => true,
                                 "displayDate" => $dt->toFormattedDateString()
                             );
-                        array_push($events,$event);
+                        array_push($this->events,$event);
 
                     }
 
-        */
 
         $predictions = $this->maxValues($sales);
         while ($end->gt(Carbon::now()->subDays(1)))
@@ -113,18 +126,18 @@ class SalesRepository extends EloquentRepository {
             $amfound = -1;
             $pmfound = -1;
 
-            /*
+
             foreach($projections as $value){
-                $dt = Carbon::instance($value->date);
+                $dt = Carbon::createFromFormat('Y-m-d', $value->date);
 
                 if($dt->toDateString() != $end->toDateString())
                     continue;
                 else {
-                    if($value->shift == "AM"){
+                    if($value->shift == "am"){
                         $amPrediction = $value->amount;
                         $amfound = $value->amount;
                     }
-                    if($value->shift == "PM"){
+                    if($value->shift == "pm"){
                         $pmPrediction = $value->amount;
                         $pmfound =  $value->amount;
                     }
@@ -132,7 +145,7 @@ class SalesRepository extends EloquentRepository {
                 }
 
             }
-            */
+
             if ($amfound < 0)
             {
                 $event =
@@ -142,7 +155,7 @@ class SalesRepository extends EloquentRepository {
                         "start"       => $end->toDateTimeString(),
                         "end"         => $end->toDateTimeString(),
                         "className"   => 'bgm-gray',
-                        "shift"       => "AM",
+                        "shift"       => "am",
                         "amount"      => $prediction["am"],
                         "editable"    => true,
                         "displayDate" => $end->toFormattedDateString(),
@@ -159,7 +172,7 @@ class SalesRepository extends EloquentRepository {
                         "start"       => $end->toDateTimeString(),
                         "end"         => $end->toDateTimeString(),
                         "className"   => 'bgm-gray',
-                        "shift"       => "PM",
+                        "shift"       => "pm",
                         "editable"    => true,
                         "amount"      => $prediction["pm"],
                         "displayDate" => $end->toFormattedDateString(),

@@ -2,6 +2,7 @@
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Input;
 use App\AB\Sales\SalesRepository;
+use Illuminate\Support\Facades\DB;
 
 class SalesController extends Controller
 {
@@ -37,11 +38,19 @@ class SalesController extends Controller
 
      protected function deleteProjection()
     {
-       		return view('deleteprojection');
+        $id = Input::get('objectId');
+        DB::table('sales_projections')->where('id', '=', $id)->delete();
+        return;
     }
       protected function saveProjection()
     {
-          return view('saveprojection');
+        $shift = Input::get('shift');
+        $date = Input::get('start');
+        $amount = Input::get('amount');
+        DB::table('sales_projections')->insert(
+            ['shift' => $shift,'amount' => $amount, 'date' => $date, 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()]
+        );
+          return;
     }
 
 }

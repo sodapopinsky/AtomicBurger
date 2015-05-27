@@ -1,36 +1,29 @@
 <?php  namespace App\Http\Controllers;
-use Parse\ParseObject;
-use Parse\ParseQuery;
-use Parse\ParseClient;
+
 use Illuminate\Support\Facades\Input;
 use Carbon\Carbon;
-date_default_timezone_set('America/Chicago');
+use App\AB\Sales\SalesRepository;
 class ToolsController extends BaseController
 {
+    private $sales;
+    public function __construct(SalesRepository $sales)
+    {
+        $this->sales = $sales;
+    }
+
      protected function meatCalculator()
     {
        		return view('tools.meatcalculator');
     }
 
-    protected function test(){
 
-    	echo Carbon::now();
-    	
-    	return "1";
-    }
      protected function calculateMeat()
     
     {
-    	//calculate expected sales
-$this->initializeParse();
+
 $start = Carbon::now()->subWeeks(4);
 $end = Carbon::now();
-
-$query = new ParseQuery("Sales");
-$query->greaterThan("date",$start);
-$query->lessThan("date",$end);
-$results = $query->find();
-	
+	$sales = $this->sales->getSalesForDateRange($start,$end);
 	/*
 $query = new ParseQuery("SalesProjections");
 $query->greaterThan("date",Carbon::now());
@@ -68,9 +61,9 @@ $projections = $query->find();
 		);
 	
 
-	foreach($results as $item){
-	
-		$dt = Carbon::instance($item->date);
+	foreach($sales as $item){
+
+        $dt = Carbon::createFromFormat('Y-m-d', $item->date);
 		$dow = $dt->dayOfWeek;
 
 		$am = $inputs[$dow]["am"];
@@ -85,9 +78,6 @@ $projections = $query->find();
 		$pm["sum"] = $item->pm; 
 		$inputs[$dow]["pm"] = $pm;
 		}
-
-
-		//todo:  filter to only last 4 weeks
 
 
 	}

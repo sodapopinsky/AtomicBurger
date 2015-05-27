@@ -61,8 +61,6 @@ if($("#pattyCount").val().length > 0 && $.isNumeric($("#pattyCount").val()) ){
 
      });
 
-             
-
 
     }
 });
