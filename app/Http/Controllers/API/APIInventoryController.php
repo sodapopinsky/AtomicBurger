@@ -48,7 +48,7 @@ class APIInventoryController extends Controller {
 	 */
 	public function store()
 	{
-		//
+		return "succhess";
 	}
 
 	/**
