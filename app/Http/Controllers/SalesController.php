@@ -3,6 +3,7 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Input;
 use App\AB\Sales\SalesRepository;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Response;
 
 class SalesController extends Controller
 {
@@ -31,8 +32,8 @@ class SalesController extends Controller
 
 
         $events = $this->sales->getSalesEvents(Input::get('start'),Input::get('end'));
-
-         return json_encode($events);
+         return Response::json($events);
+         return $events;
 
 
     }
