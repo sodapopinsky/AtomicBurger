@@ -11,7 +11,10 @@ class  InventorySeeder extends Seeder {
         ///!!WIPES DATA CLEAN FIRST
         DB::table('inventory_items')->delete();
 
-        $string = Storage::get('data.json');
+        $filename =  public_path() . "/seeds/inventory.json";
+        $string = File::get($filename);
+
+
         $json_a = json_decode($string, true);
         $arr = $json_a["results"];
         $inner = array();

@@ -29,6 +29,7 @@ class SalesController extends Controller
       {
 
 
+
         $events = $this->sales->getSalesEvents(Input::get('start'),Input::get('end'));
 
          return json_encode($events);

@@ -3,6 +3,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Storage;
+
 class  SalesSeeder extends Seeder {
 
     public function run()
@@ -11,7 +12,10 @@ class  SalesSeeder extends Seeder {
         ///!!WIPES DATA CLEAN FIRST
         DB::table('sales')->delete();
 
-        $string = Storage::get('sales.json');
+
+        $filename =  public_path() . "/seeds/sales.json";
+        $string = File::get($filename);
+
         $json_a = json_decode($string, true);
         $arr = $json_a["results"];
         $inner = array();
