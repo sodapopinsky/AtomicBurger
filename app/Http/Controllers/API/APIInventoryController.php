@@ -50,7 +50,14 @@ class APIInventoryController extends Controller {
 	public function store()
 	{
         $arr = Input::get("objects");
-		return Response::json($arr);
+
+        foreach($arr as $object){
+            $inventoryObject =  $this->inventory->getById($object["id"]);
+            $inventoryObject->quantityOnHand = $object["quantityOnHand"];
+            $inventoryObject->save();
+        }
+
+		return "success";
 	}
 
 	/**
