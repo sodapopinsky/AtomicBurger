@@ -118,7 +118,7 @@ class APIToolsController extends Controller
 
 
 
-        return json_encode($projection);
+        return $projection;
 
 /*
 	$patties = Input::get('patties');
