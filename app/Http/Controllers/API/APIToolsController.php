@@ -113,7 +113,7 @@ class APIToolsController extends Controller
         $patties = (((($predictions[$dow]["am"] + $predictions[$dow]["pm"] + $predictions[$last]["am"]) * .08) - Input::get('patties')) * .3375);
 
         $projection = array('thisAM' => $predictions[$dow]["am"], 'thisPM' => $predictions[$dow]["pm"],
-                            'nextAM' => $predictions[$last]["am"], 'patties' => $patties);
+                            'nextAM' => $predictions[$last]["am"], 'patties' => $patties, 'lbs' => $patties);
 
 
 
